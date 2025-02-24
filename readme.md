@@ -1,49 +1,38 @@
-# Nutrition Tracker
+# sv
 
-A minimalist nutrition tracking app built with Svelte 5, Supabase, and AI-powered food detection.
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-## Overview
+## Creating a project
 
-Track your nutrition through text or photo logging, with AI assistance for food recognition and nutritional analysis. Features a clean, intuitive interface inspired by apps like Ate.
+If you're seeing this, you've probably already done this step. Congrats!
 
-## Development Phases
+```bash
+# create a new project in the current directory
+npx sv create
 
-### Phase 1: MVP - Text Logging & Basic Features
-- User authentication (signup/login)
-- Text-based meal logging
-- Timeline view of meals
-- Basic calorie tracking
-- Settings for nutritional goals
+# create a new project in my-app
+npx sv create my-app
+```
 
-### Phase 2: Photo Logging & AI
-- Photo upload for meals
-- Basic AI food detection
-- Image preview and captions
-- Enhanced timeline with photos
-- Preliminary nutritional analysis
+## Developing
 
-### Phase 3: Analytics & Polish
-- Detailed nutritional insights
-- Daily/weekly analytics dashboard
-- Macro tracking (protein, carbs, fats)
-- Refined UI/UX
-- Advanced AI food recognition
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-## Tech Stack
+```bash
+npm run dev
 
-- **Frontend**: Svelte 5 with SvelteKit
-- **Backend**: Supabase (Auth, Database, Storage)
-- **API/AI**: Python FastAPI, YOLOv8 for food detection
-- **Styling**: Tailwind CSS, shadcn-svelte components
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
-## Getting Started
+## Building
 
-(Coming soon - Setup instructions will be added as development progresses)
+To create a production version of your app:
 
-## Contributing
+```bash
+npm run build
+```
 
-This project is currently in active development. Feel free to open issues for feature requests or bug reports.
+You can preview the production build with `npm run preview`.
 
-## License
-
-MIT
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
